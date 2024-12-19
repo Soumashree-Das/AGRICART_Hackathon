@@ -1,0 +1,119 @@
+.csa-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px; /* Padding consistent with previous styles */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Centered and consistent margin */
+    max-width: 1200px; /* Limit max width for better control */
+  }
+  
+  .csa-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+  
+  .csa-info {
+    max-width: 850px;
+    font-size: 1rem;
+  }
+  
+  .csa-button {
+    margin-top: 20px;
+    padding: 10px 20px; /* Consistent padding */
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .csa-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Extra small devices (portrait phones, less than 576px) */
+  @media (max-width: 575px) {
+    .csa-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px; /* Maintain padding */
+    }
+  
+    .csa-image {
+      margin: 0 0 20px 0; /* Adjust margin for stacking layout */
+    }
+  
+    .csa-info {
+      max-width: 100%;
+      font-size: 0.75rem; /* Full width for small screens */
+    }
+    .csa-button {
+      font-size: 1rem;
+    }
+    
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767px) {
+    .csa-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .csa-image {
+      margin: 0 0 20px 0;
+    }
+  
+    .csa-info {
+      max-width: 100%;
+    }
+    .csa-button {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .csa-container {
+      padding: 20px;
+    }
+  
+    .csa-info {
+      max-width: 90%;
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .csa-container {
+      padding: 20px;
+      max-width: 100%;
+    }
+  
+    .csa-info {
+      max-width: 80%;
+    }
+    .csa-button {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .csa-container {
+      padding: 20px;
+      max-width: 1200px;
+    }
+  }
+  

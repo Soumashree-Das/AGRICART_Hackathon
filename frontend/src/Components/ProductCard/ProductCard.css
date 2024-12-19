@@ -1,0 +1,19 @@
+.card {
+    height: auto; /* Keep the card size flexible based on content */
+}
+
+.product-img {
+    height: 200px; /* Increase the height to make the image more visible */
+    object-fit: cover; /* Cover the container without stretching the image */
+    border-radius: 8px; /* Optionally add some border-radius for better aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to make the image stand out */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* No changes needed for responsive design as the description styling is simplified */
+}
+
+.card-body {
+    padding: 10px; /* Add padding inside the card */
+}

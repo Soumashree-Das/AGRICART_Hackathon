@@ -1,0 +1,161 @@
+.about {
+    padding: 50px;
+    width: 100%;
+}
+
+.about h1 {
+    text-align: center;
+    padding: 2vw;
+    color: rgb(45, 89, 55);
+}
+
+.imgcontainer img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.aboutcontents {
+    padding: 3vw;
+}
+
+.aboutcontents p {
+    padding: 1vw;
+    font-size: 1.1rem;
+}
+
+.team-h{
+    text-align: center;
+    color: rgb(45, 89, 55);
+}
+
+.team {
+    padding-top: 20px;
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content {
+    height: 350px;
+    text-align: center;
+    margin-bottom: 20px; /* Add margin to avoid overlap on smaller screens */
+}
+
+.content img {
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensure the image fits within the circular frame */
+}
+
+.content h4 {
+    color: rgb(45, 89, 55);
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    .about {
+        padding: 20px;
+    }
+
+    .imgcontainer img {
+        height: 35vh;
+    }
+
+    .aboutcontents {
+        padding: 10px;
+    }
+
+    .aboutcontents p {
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+    .team {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .content {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .content img {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .about {
+        padding: 30px;
+    }
+
+    .imgcontainer img {
+        height: 60vh;
+    }
+
+    .aboutcontents {
+        padding: 2vw;
+    }
+
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content img {
+        height: 180px;
+        width: 180px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .about {
+        padding: 40px;
+    }
+
+    .imgcontainer img {
+        height: 70vh;
+    }
+
+    .aboutcontents {
+        padding: 2.5vw;
+    }
+
+    .content img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .about {
+        padding: 50px;
+    }
+
+    .imgcontainer img {
+        height: 80vh;
+    }
+
+    .aboutcontents {
+        padding: 3vw;
+    }
+
+    .content img {
+        height: 200px;
+        width: 200px;
+    }
+}

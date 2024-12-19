@@ -1,0 +1,114 @@
+.header{
+    padding: 40px;
+  }
+  .card {
+    position: relative; /* Adjust as needed */
+    overflow: hidden; /* Ensures content doesn't overflow */
+  }
+  
+  .product--image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .product_content {
+    position: absolute;
+    color: white; /* Text color for contrast */
+    padding: 10px; /* Adjust as needed */
+    max-width: 50%;
+    bottom: 28%;
+    left: 5vw;
+    animation: fadeIn 1.5s;
+    box-sizing: border-box; /* Ensures padding is included in element's total width and height */
+  }
+  
+  .heading, .price, .carousel-btn {
+    margin: 8px;
+    padding: 5px 2px; /* Adjust as needed */
+    font-size: 1.5rem;
+  }
+  
+  .carousel-btn {
+    background-color: #08542f; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 20px 30px; /* Adjust as needed */
+    cursor: pointer; /* Show pointer cursor on hover */
+    border-radius: 40px;
+  }
+  
+  .carousel-btn:hover {
+    background-color: #919191; /* Darker background on hover */
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (max-width: 576px) {
+    .product_content {
+      max-width: 80%;
+      bottom: 20%;
+      left: 10px;
+      padding: 5px;
+    }
+  
+    .heading, .price, .carousel-btn {
+      font-size: 1.2rem;
+      padding: 10px 5px;
+    }
+  
+    .carousel-btn {
+      padding: 15px 20px;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (max-width: 768px) {
+    .product_content {
+      max-width: 70%;
+      bottom: 25%;
+      left: 5vw;
+    }
+  
+    .heading, .price, .carousel-btn {
+      font-size: 1.3rem;
+    }
+  
+    .carousel-btn {
+      padding: 18px 25px;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (max-width: 992px) {
+    .product_content {
+      max-width: 60%;
+      bottom: 28%;
+      left: 5vw;
+    }
+  
+    .heading .price, .carousel-btn {
+      font-size: 1.4rem;
+    }
+  
+    .carousel-btn {
+      padding: 20px 28px;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (max-width: 1200px) {
+    .product_content {
+      max-width: 50%;
+    }
+  
+    .heading, .price,.carousel-btn {
+      font-size: 1.5rem;
+    }
+  
+    .carousel-btn {
+      padding: 20px 30px;
+    }
+  }
+  

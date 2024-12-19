@@ -1,0 +1,71 @@
+.profile-page {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.profile-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-item {
+  margin-bottom: 10px;
+}
+
+.profile-item span {
+  font-weight: bold;
+}
+
+.show-orders-btn {
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.show-orders-btn:hover {
+  background-color: darkgreen;
+}
+
+.orders-section {
+  margin-top: 20px;
+}
+
+.orders-list {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.order-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-item p {
+  margin: 5px 0;
+}
+
+.order-item ul {
+  padding-left: 20px;
+}
